@@ -1,5 +1,8 @@
-const name = 'Eugene';
+const userName = 'Eugene';
 
-const sayHi = (name) => `Hello, ${name}`;
+const sayHi = (userName) => `Hello, ${userName}`;
 
-console.log(sayHi(name));
+module.exports = {
+    userName,
+    sayHi,
+}
