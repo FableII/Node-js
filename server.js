@@ -6,6 +6,7 @@ const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   console.log('Server request');
+  console.log('Just for test');
 
   res.setHeader('Content-Type', 'text/html');
 
@@ -14,7 +15,7 @@ const server = http.createServer((req, res) => {
 
   switch(req.url) {
     case '/':
-    case '/home':
+    case '/homes':
     case '/index.html':
       basePath = createPath('index');
       res.statusCode = 200;
